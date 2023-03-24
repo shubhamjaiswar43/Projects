@@ -1,0 +1,44 @@
+1. vector<data_type> vector_name(int size)
+==> it is to give initial size of vector else it will be zero
+
+2. vector_name.size()
+==> it will return the no. of element present in vector
+
+3. vector_name.capacity()
+==> it will return the capacity of vector(i.e the no. of element it can store)
+
+4. vector_name.add(data_type)
+==> it will take a parameter same as the data_type the vector created to add it in vector
+
+5. vector_name.addAt(data_type,int)
+==> it will take two parameter,first the element and the second is index ,
+    the element will store in index of the vector
+
+6. vector_name.pop()
+==> it will delete the last element of the vector
+
+7. vector_name.popAt(int)
+==> it will take one parameter for index ,and delete the element at that index
+
+8. vector_name.begin()
+==> it will return the address of the beginning of the vector
+
+9. vector_name.end()
+==> it will return the address of the (end+1) of the vector
+
+10. vector_name.at(int)
+==> it will take a parameter for index to return the element at that index
+
+11. vector_name.resize(int)
+==> it will take a parameter for resizing,and the change the size of the vector
+    if size>newsize,then the extra element will be deleted
+
+12. vector_name.clear()
+==> it will clear the vector
+
+13. vector_name.assign(int,data_type)
+==> it will take two parameter,first for size of vector,and second for element
+    and the vector will filled with that element
+
+14. vector_name.show()
+==> it will show the elements in the vector

@@ -1,0 +1,20 @@
+----------------------------------------------------------------------------|
+SR.NO. |        Functions Name          | Operation [16]                    |
+----------------------------------------------------------------------------|
+   1   |        absolute(double)        | return modulus                    |
+   2   |        power(double,int)       | return double^int                 |
+   3   |        factorial(int)          | return int!                       |
+   4   |        permutation(int1,int2)  | return int1 P int2                |
+   5   |        combination(int1,int2)  | return int1 C int2                |
+   6   |        sine(double)            | return sine(double)               |
+   7   |        cosine(double)          | return cosine(double)             |
+   8   |        tangent(double)         | return tangent(double)            |
+   9   |        cosecant(double)        | return cosecant(double)           |
+   10  |        secant(double)          | return secant(double)             |  
+   11  |        cotangent(double)       | return cotangent(double)          |
+   12  |        logBaseE(double)        | return logBaseE(double)           |
+   13  |        exponent(double)        | return exponent(double)           |
+   14  |        squareRoot(double)      | return squareRoot(double)         |
+   15  |        logXbaseY(double,double)| return logXbaseY(double,double)   |
+   16  |        xRaiseToy(double,double)| return xRaiseToy (double,double)  |
+----------------------------------------------------------------------------|
