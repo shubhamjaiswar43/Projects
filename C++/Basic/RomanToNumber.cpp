@@ -8,9 +8,9 @@ int main()
     string st;
     input:
     cout<<"Enter a Roman Number : ";
-    cin>>st;
+    cin>>st;//Taking input for the roman no.
     int n=st.size();
-    int arr[n];
+    int arr[n];//array for value of the roman no. at every index
     for(int i=0;i<n;i++){
         switch(st[i]){
             case 'I':
@@ -39,7 +39,7 @@ int main()
             goto input;
         }
     }
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n;i++){//converting to decimal number
         if(i<n-1){
             if(arr[i]<arr[i+1])
                 num-=arr[i];
@@ -49,6 +49,6 @@ int main()
         else
             num+=arr[i];
     }
-    cout<<"Number : "<<num<<endl;
+    cout<<"Number("<<st<<") : "<<num<<endl;//printing the decimal number
     return 0;
 }

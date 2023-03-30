@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include<map>
+#include <map>
 using namespace std;
 /*
  0 | 1 | 2
@@ -56,8 +56,8 @@ int chkwin(vector<char> v)
 int main()
 {
     vector<char> game;
-    map<int,int> mapp;
-    map<int,int> :: iterator iter;
+    map<int, int> mapp;
+    map<int, int>::iterator iter;
     for (int i = 0; i < 9; i++)
     {
         game.push_back(i + 49);
@@ -78,15 +78,17 @@ int main()
                 goto player1turn;
             }
             iter = mapp.find(turn);
-            if (iter==mapp.end())
+            if (iter == mapp.end())
             {
-                mapp[turn]=turn;
+                mapp[turn] = turn;
             }
-            else{
-                cout<<"The Entered placed is already taken...."<<endl<<"Try Again..."<<endl;
+            else
+            {
+                cout << "The Entered placed is already taken...." << endl
+                     << "Try Again..." << endl;
                 goto player1turn;
             }
-            
+
             game[turn - 1] = 'O';
         }
         else
@@ -101,12 +103,14 @@ int main()
                 goto player2turn;
             }
             iter = mapp.find(turn);
-            if (iter==mapp.end())
+            if (iter == mapp.end())
             {
-                mapp[turn]=turn;
+                mapp[turn] = turn;
             }
-            else{
-                cout<<"The Entered placed is already taken...."<<endl<<"Try Again..."<<endl;
+            else
+            {
+                cout << "The Entered placed is already taken...." << endl
+                     << "Try Again..." << endl;
                 goto player2turn;
             }
 
@@ -128,6 +132,7 @@ int main()
         }
     }
 
-    cout<<"No One Win's"<<endl<<"GAME OVER"<<endl;
+    cout << "No One Win's" << endl
+         << "GAME OVER" << endl;
     return 0;
 }
